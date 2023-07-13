@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "603989171425",
+    "project_id": "reusemarkettest",
+    "storage_bucket": "reusemarkettest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603989171425:android:f953d5ad7e5f2dadb4eba0",
+        "android_client_info": {
+          "package_name": "com.example.reusemarkettest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603989171425-hr4sli9egfh5u00t1fpkvjlbpci3hc48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Gw8tu_WHcg5bFglDKz_LKOU8bcN50Yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603989171425-hr4sli9egfh5u00t1fpkvjlbpci3hc48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603989171425:android:44c61287dacf4f9fb4eba0",
+        "android_client_info": {
+          "package_name": "com.example.reusemarkettest.repository"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603989171425-7g1fp82d5ipei5pgsgurk98krac44ilc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reusemarkettest.repository",
+            "certificate_hash": "967ffb7dc57322bdc5e0035be746daa81b82e2a0"
+          }
+        },
+        {
+          "client_id": "603989171425-hr4sli9egfh5u00t1fpkvjlbpci3hc48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Gw8tu_WHcg5bFglDKz_LKOU8bcN50Yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603989171425-hr4sli9egfh5u00t1fpkvjlbpci3hc48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
