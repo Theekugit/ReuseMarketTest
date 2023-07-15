@@ -9,6 +9,16 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.reusemarkettest.ui.home.list.ListFragment"
-        android:label="ListFragment"
-        tools:layout="@layout/fragment_list"/>
+        android:label="Reuse item list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_blankFragment"
+            app:destination="@id/blankFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.reusemarkettest.ui.home.test.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
 </navigation>

@@ -1,28 +1,24 @@
 package com.example.reusemarkettest.data
 
 
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.firebase.firestore.auth.User
+import com.google.android.gms.auth.api.identity.SignInCredential
+import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.AuthResult
+import com.google.firebase.auth.FirebaseUser
 
 
 interface IDataSource {
-    /*val currentUser: FirebaseUser?
-    suspend fun login(email: String, password: String): UIState<FirebaseUser>
-    suspend fun signUp(name: String, email: String, password: String): UIState<FirebaseUser>
-    fun logout()*/
 
-    /**
-     * New
-     */
+    suspend fun signUp(email: String, password: String) : Task<AuthResult>
 
-    suspend fun signUp(email: String, password: String)
+    suspend fun signUpWithGoogle(account: SignInCredential): Task<AuthResult>
+    suspend fun login(email: String, password: String) : Task<AuthResult>
 
-    suspend fun signUpWithGoogle(account: GoogleSignInAccount)
-    suspend fun login(email: String, password: String)
+    fun updateUserInfo(user: FirebaseUser)
 
-    fun updateUserInfo(user: User)
-
+    fun getCurrentUser() : FirebaseUser?
 
     fun logout()
+    fun signOut()
 
 }

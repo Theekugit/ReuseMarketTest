@@ -3,10 +3,8 @@ package com.example.reusemarkettest.data.repositories
 import com.example.reusemarkettest.data.IDataSource
 import com.example.reusemarkettest.data.sources.local.LocalDataSource
 import com.example.reusemarkettest.data.sources.remote.RemoteDataSource
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.firestore.auth.User
-import kotlinx.coroutines.tasks.await
+import com.google.android.gms.auth.api.identity.SignInCredential
+import com.google.firebase.auth.FirebaseUser
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor(
@@ -16,19 +14,27 @@ class AuthRepositoryImpl @Inject constructor(
     override suspend fun signUp(email: String, password: String)
     = remoteDataSource.signUp(email, password)
 
-    override suspend fun signUpWithGoogle(account: GoogleSignInAccount)
+    override suspend fun signUpWithGoogle(account: SignInCredential)
     = remoteDataSource.signUpWithGoogle(account)
 
 
     override suspend fun login(email: String, password: String) =
         remoteDataSource.login(email, password)
 
-    override fun updateUserInfo(user: User)
-    = localDataSource.updateUserInfo(user)
+    override fun updateUserInfo(user: FirebaseUser) {
+        TODO("Not yet implemented")
+    }
+
+    override fun getCurrentUser()
+     = remoteDataSource.getCurrentUser()
 
 
     override fun logout() {
 
+    }
+
+    override fun signOut() {
+        remoteDataSource.signOut()
     }
 
     /**
