@@ -1,4 +1,4 @@
-package com.example.reusemarkettest.views
+package com.example.reusemarkettest.ui.home.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

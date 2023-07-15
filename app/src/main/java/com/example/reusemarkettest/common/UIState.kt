@@ -1,4 +1,4 @@
-package com.example.reusemarkettest.constants
+package com.example.reusemarkettest.common
 
 
 import java.lang.Exception

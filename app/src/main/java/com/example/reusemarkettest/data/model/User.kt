@@ -1,4 +1,4 @@
-package com.example.reusemarkettest.model
+package com.example.reusemarkettest.data.model
 
 data class User(
     val email: String?,
